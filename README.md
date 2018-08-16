@@ -68,6 +68,7 @@ $('[name=country]').on('autocomplete:request', function(event, query, callback) 
 Instead of strings, you can also pass objects with the mandatory properties `label` and `value`.
 `label` will be shown as suggestions. When selected, `value` will be added to the input.
 
+```js
 $('[name=country]').on('autocomplete:request', function(event, query, callback) {
   callback([
     {label: 'Germany (Europe)', value: 'Germany'},
@@ -75,7 +76,7 @@ $('[name=country]').on('autocomplete:request', function(event, query, callback) 
     {label: 'Uruguay (South America)', value: 'Uruguay'}
   ]);
 })
-
+```
 
 ### Select event
 
